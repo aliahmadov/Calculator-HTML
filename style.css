@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Babylonica&family=Benne&family=Electrolize&family=Inconsolata:wght@900&family=Lato&family=Libre+Franklin:wght@700&family=Noto+Serif+Ahom&family=Oswald:wght@700&family=Sassy+Frass&family=Sen:wght@400;700&family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.basefont {
+    font-family: 'Inconsolata', monospace;
+}
+
+body {
+    padding: 10%;
+}
+
+.container {
+    width: 60%;
+    border: 1px solid white;
+    margin: auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border: 10px solid black;
+    border-radius: 0px 40px 0px 0px;
+}
+
+.sub-container {
+    width: 320px;
+    border: 10px rgb(94, 91, 91)  double;
+    border-radius: 35px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 640px;
+
+    background-color: black;
+    position:relative;
+
+}
+
+.text-area {
+    height: 30%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cal-text {
+    color: rgb(150, 148, 148);
+    font-weight: bold;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 60px;
+
+}
+
+.num-text {
+    color: white;
+    font-weight: bolder;
+    font-size: 3em;
+    position: absolute;
+    bottom: 10px;
+}
+
+.button-area {
+    flex-basis: 70%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+.orange {
+    background-color: orange !important;
+    color: white !important;
+}
+
+.dark-gray {
+    background-color: rgb(52, 51, 51) !important;
+    color: white !important;
+}
+
+.button-style {
+    color: black;
+    border-radius: 100%;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(163, 155, 155);
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.button-style:hover
+{
+    background-color: white !important;
+    color: darkblue !important;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.zero {
+    border-radius: 30px;
+    justify-content: left !important;
+    width: 230px;
+    
+}
+
+.bottom-style
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    height: 30px;
+}
+
+.rounded-border
+{
+    width: 200px;
+    height: 5px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 10px;
+}

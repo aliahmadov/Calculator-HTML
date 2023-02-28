@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="index.js"></script>
+    <section class="container"> 
+        <h1 class="basefont" style="text-align: center; font-size: 4em;margin-bottom: 40px;">Your Calculator</h1>
+        <section class="sub-container">
+            
+            <div class="text-area">
+                
+                <p id="uplabel" class="basefont cal-text"></p>
+                <p id="num-text" class="num-text basefont">0</p>
+            </div>
+
+
+            <div class="button-area">
+                <section style="width:100%; display: flex;">
+                    <div id="clear" onclick="Clear_Click(id)" class="button-style basefont">C</div>
+                    <div class="button-style basefont">D</div>
+                    <div id="percent" onclick="Operator_Click(id)" class="button-style basefont">%</div>
+                    <div id="division" onclick="Operator_Click(id)" class="button-style orange basefont">/</div>
+                </section>
+
+                <section style="width:100%;  display: flex;">
+                    <div id="b_7" onclick="Number_Click(id)" class="button-style dark-gray basefont">7</div>
+                    <div id="b_8" onclick="Number_Click(id)" class="button-style dark-gray basefont">8</div>
+                    <div id="b_9" onclick="Number_Click(id)" class="button-style dark-gray basefont">9</div>
+                    <div id="product" onclick="Operator_Click(id)" class="button-style orange basefont">X</div>
+                </section>
+
+                <section style="width:100%;  display: flex;">
+                    <div id="b_4" onclick="Number_Click(id)" class="button-style dark-gray basefont">4</div>
+                    <div id="b_5" onclick="Number_Click(id)" class="button-style dark-gray basefont">5</div>
+                    <div id="b_6" onclick="Number_Click(id)" class="button-style dark-gray basefont">6</div>
+                    <div id="minus" onclick="Operator_Click(id)" class="button-style orange basefont">-</div>
+                </section>
+
+                <section style="width:100%; display: flex;">
+                    <div id="b_1" onclick="Number_Click(id)" class="button-style dark-gray basefont">1</div>
+                    <div id="b_2" onclick="Number_Click(id)" class="button-style dark-gray basefont">2</div>
+                    <div id="b_3" onclick="Number_Click(id)" class="button-style dark-gray basefont">3</div>
+                    <div id="plus" onclick="Operator_Click(id)" class="button-style orange basefont">+</div>
+                </section>
+
+                <section style="width:101.5%; display: flex;">
+                    <div id="b_0" onclick="Number_Click(id)"  class="button-style zero dark-gray basefont">0</div>
+
+                    <div id="b_dot" onclick="Number_Click(id)" class="button-style dark-gray basefont">.</div>
+                    <div id="equal" onclick="Equal_Click(id)" class="button-style orange basefont">=</div>
+                </section>
+
+                <section class="bottom-style" >
+                    <div class="rounded-border"></div>
+                </section>
+
+            </div>
+
+        </section>
+    </section>
+</body>
+</html>
