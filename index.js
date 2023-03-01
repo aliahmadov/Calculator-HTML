@@ -1,12 +1,79 @@
 
 
+let lightMode = false;
+
+
+
+
+function Turn(id) {
+    let btn = document.getElementById(id);
+    lightMode = !lightMode;
+    let numbtns = document.getElementsByClassName("button-style dark-gray basefont");
+    let operatorbtns = document.getElementsByClassName("button-style orange basefont")
+    let subcontainer = document.getElementById("sub-container");
+    let uplabel = document.getElementById("uplabel");
+    let num_text = document.getElementById("num-text");
+    let container = document.getElementById("container");
+    let title=document.getElementById("title");
+    let border = document.getElementById("border");
+    if (lightMode) {
+        btn.innerHTML = "Light Mode";
+        btn.classList.add("light-btn");
+        container.classList.add("bg-white");
+        title.classList.add("text-dark");
+        for (let i = 0; i < numbtns.length; i++) {
+
+            numbtns[i].classList.add("white");
+            numbtns[i].addEventListener("mouseover", function () {
+                numbtns[i].classList.add("light");
+            });
+
+        }
+        for (let i = 0; i < operatorbtns.length; i++) {
+            operatorbtns[i].classList.add("darkorange");
+            operatorbtns[i].addEventListener("mouseover", function () {
+                operatorbtns[i].classList.add("light");
+            });
+        }
+        subcontainer.classList.add("bg-white");
+        border.classList.add("bg-black");
+        uplabel.classList.add("text-gray");
+        num_text.classList.add("text-dark");
+    }
+    else {
+        btn.innerHTML = "Dark Mode";
+        btn.classList.remove("light-btn");
+        container.classList.remove("bg-white");
+        title.classList.remove("text-dark");
+        for (let i = 0; i < numbtns.length; i++) {
+            numbtns[i].classList.remove("white");
+            numbtns[i].addEventListener("mouseover", function () {
+                numbtns[i].classList.remove("light");
+            });
+        }
+
+        for (let i = 0; i < operatorbtns.length; i++) {
+            operatorbtns[i].classList.remove("darkorange");
+            operatorbtns[i].addEventListener("mouseover", function () {
+                operatorbtns[i].classList.remove("light");
+            });
+        }
+
+        subcontainer.classList.remove("bg-white");
+        border.classList.remove("bg-black");
+        uplabel.classList.remove("text-gray");
+        num_text.classList.remove("text-dark");
+    }
+
+}
+
+
 OperatorClicked = false;
 ResultValue = 0;
 
 OperationSign = "";
 
 isEqualCLicked = false;
-
 
 function Number_Click(id) {
     var uplabel = document.getElementById("uplabel")

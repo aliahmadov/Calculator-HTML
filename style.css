@@ -18,7 +18,7 @@ body {
     border: 1px solid white;
     margin: auto;
     padding: 20px;
-    background-color: whitesmoke;
+    background-color: rgb(35, 34, 34);
     border: 10px solid black;
     border-radius: 0px 40px 0px 0px;
 }
@@ -72,6 +72,28 @@ body {
     padding: 10px;
 }
 
+.bg-black
+{
+    background-color: black !important;
+}   
+
+
+
+.text-gray
+{
+    color: gray !important;
+}
+
+.text-dark
+{
+    color: black !important;
+}
+
+.light-btn
+{
+    background-color: white;
+    color: black;
+}
 
 .orange {
     background-color: orange !important;
@@ -104,6 +126,14 @@ body {
     cursor: pointer;
 }
 
+.light:hover
+{
+    background-color: black !important;
+    color: white !important;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 .zero {
     border-radius: 30px;
     justify-content: left !important;
@@ -129,4 +159,44 @@ body {
     border-radius: 30px;
     position: absolute;
     bottom: 10px;
+}
+
+button
+{
+    margin: 30px;
+    padding: 5px 25px;
+    background-color: black;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    transition: 0.5s;
+    font-size: 2em;
+}
+
+.darkorange
+{
+    background-color: orangered !important;
+    color: black !important;
+}
+
+.white
+{
+    background-color: white !important;
+    box-shadow: 10px 10px 10px;
+    color: black !important;
+}
+
+.bg-white
+{
+    background-color: white !important;
+}
+
+
+
+button:hover
+{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
 }
